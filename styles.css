@@ -1,0 +1,45 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    align-items: center;
+}
+
+.grey-border {
+    border: 0.1rem solid grey;
+    padding: 0.15rem;
+    font-weight: bold;
+}
+
+.shadowed-border {
+    border: 0.2rem solid white;
+    border-radius: 0.5rem;
+
+    padding: 10px;
+    box-shadow: 5px -5px 5px lightgray;
+}
+
+
+.fully-correct-letter {
+    background-color: green;
+    color: white;
+}
+
+.partially-correct-letter {
+    background-color: burlywood;
+    color: white;
+}
+
+.incorrect-letter {
+    background-color: grey;
+    color: white;
+}
+
+.center {
+    max-width: 60vw;
+    margin: 0 auto;
+}
+
+.width-sm {
+    max-width: 15vw;
+}
