@@ -8,7 +8,7 @@ As someone playing the game, I want to:
 
 * [x] Visit your website at a publicly accessible domain name
 * [x] Browse your website on mobile, tablet, and desktop devices
-* [ ] See the rules of the game
+* [x] See the rules of the game
 * [ ] See the 6x5 tile grid; each row representing one of my six available guesses and each tile an individual letter
 * [ ] See the keyboard each of which is a clickable button that I can use to guess with
 * [ ] See the letters that I am guessing appear in the appropriate tiles
@@ -20,4 +20,4 @@ As someone playing the game, I want to:
 * [ ] At the end get feedback congratulatingme if I won and revealing the correct answer if I didn't
 
 
-Here is the [live page]()
+Here is the [live page](https://yassienabdillahi.github.io/Wordle/)
