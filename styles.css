@@ -5,6 +5,10 @@
     align-items: center;
 }
 
+.justify-center {
+    justify-content: center;
+  }
+
 .grey-border {
     border: 0.1rem solid grey;
     padding: 0.15rem;
@@ -36,10 +40,49 @@
 }
 
 .center {
-    max-width: 60vw;
+    max-width: 75vw;
     margin: 0 auto;
 }
 
 .width-sm {
     max-width: 15vw;
+}
+
+.width-xxl {
+    max-width: 96vw;
+}
+
+
+.tile {
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 0.175rem solid lightgray;
+    padding: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.stack-sm > * + * {
+    margin-top: 1px;
+}
+
+.keyboard-letter {
+    height: 1rem;
+    width: 2.25rem;
+    border: 0.175rem solid grey;
+    padding: 0.05rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.keyboard-button {
+    height: 1rem;
+    width: 3rem;
+    border: 0.175rem solid grey;
+    padding: 0.05rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
 }
