@@ -9,7 +9,7 @@ As someone playing the game, I want to:
 * [x] Visit your website at a publicly accessible domain name
 * [x] Browse your website on mobile, tablet, and desktop devices
 * [x] See the rules of the game
-* [ ] See the 6x5 tile grid; each row representing one of my six available guesses and each tile an individual letter
+* [x] See the 6x5 tile grid; each row representing one of my six available guesses and each tile an individual letter
 * [ ] See the keyboard each of which is a clickable button that I can use to guess with
 * [ ] See the letters that I am guessing appear in the appropriate tiles
 * [ ] Click a button to 'backspace/erase' a letter before I submit my guess
