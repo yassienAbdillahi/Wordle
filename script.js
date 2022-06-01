@@ -5771,10 +5771,487 @@ const validGuess = [
 
 let pageBody = document.getElementsByTagName("body")[0];
 let instructionsSection = document.getElementById("instructions");
-
 function hideInstructionsSection () {
     instructionsSection.style.display = "none";
 }
-
 pageBody.addEventListener("click", hideInstructionsSection);
 
+const numberOfGuessesAllowed = 6;
+let currentGuess = 1;
+
+
+let g1L1 = document.getElementById("guess1Letter1").innerHTML;
+let g1L2 = document.getElementById("guess1Letter2").innerHTML;
+let g1L3 = document.getElementById("guess1Letter3").innerHTML;
+let g1L4 = document.getElementById("guess1Letter4").innerHTML;
+let g1L5 = document.getElementById("guess1Letter5").innerHTML;
+
+let g2L1 = document.getElementById("guess2Letter1").innerHTML;
+let g2L2 = document.getElementById("guess2Letter2").innerHTML;
+let g2L3 = document.getElementById("guess2Letter3").innerHTML;
+let g2L4 = document.getElementById("guess2Letter4").innerHTML;
+let g2L5 = document.getElementById("guess2Letter5").innerHTML;
+
+let g3L1 = document.getElementById("guess3Letter1").innerHTML;
+let g3L2 = document.getElementById("guess3Letter2").innerHTML;
+let g3L3 = document.getElementById("guess3Letter3").innerHTML;
+let g3L4 = document.getElementById("guess3Letter4").innerHTML;
+let g3L5 = document.getElementById("guess3Letter5").innerHTML;
+
+let g4L1 = document.getElementById("guess4Letter1").innerHTML;
+let g4L2 = document.getElementById("guess4Letter2").innerHTML;
+let g4L3 = document.getElementById("guess4Letter3").innerHTML;
+let g4L4 = document.getElementById("guess4Letter4").innerHTML;
+let g4L5 = document.getElementById("guess4Letter5").innerHTML;
+
+let g5L1 = document.getElementById("guess5Letter1").innerHTML;
+let g5L2 = document.getElementById("guess5Letter2").innerHTML;
+let g5L3 = document.getElementById("guess5Letter3").innerHTML;
+let g5L4 = document.getElementById("guess5Letter4").innerHTML;
+let g5L5 = document.getElementById("guess5Letter5").innerHTML;
+
+let g6L1 = document.getElementById("guess6Letter1").innerHTML;
+let g6L2 = document.getElementById("guess6Letter2").innerHTML;
+let g6L3 = document.getElementById("guess6Letter3").innerHTML;
+let g6L4 = document.getElementById("guess6Letter4").innerHTML;
+let g6L5 = document.getElementById("guess6Letter5").innerHTML;
+
+function guessLetterQ (currentGuess) {
+    if (currentGuess == 1) {
+        if (g1L1 == "") {g1L1 = "Q";}
+        else if (g1L2 == "") {g1L2 = "Q";}
+        else if (g1L3 == "") {g1L3 = "Q";}
+        else if (g1L4 == "") {g1L4 = "Q";}
+        else {g1L5 = "Q";}
+    }
+    else if (currentGuess == 2) {
+        if (g2L1 == "") {g2L1 = "Q";}
+        else if (g2L2 == "") {g2L2 = "Q";}
+        else if (g2L3 == "") {g2L3 = "Q";}
+        else if (g2L4 == "") {g2L4 = "Q";}
+        else {g2L5 = "Q";}
+    }
+    else if (currentGuess == 3) {
+        if (g3L1 == "") {g3L1 = "Q";}
+        else if (g3L2 == "") {g3L2 = "Q";}
+        else if (g3L3 == "") {g3L3 = "Q";}
+        else if (g3L4 == "") {g3L4 = "Q";}
+        else {g3L5 = "Q";}
+    }
+    else if (currentGuess == 4) {
+        if (g4L1 == "") {g4L1 = "Q";}
+        else if (g4L2 == "") {g4L2 = "Q";}
+        else if (g4L3 == "") {g4L3 = "Q";}
+        else if (g4L4 == "") {g4L4 = "Q";}
+        else {g4L5 = "Q";}
+    }
+    else if (currentGuess == 5) {
+        if (g5L1 == "") {g5L1 = "Q";}
+        else if (g5L2 == "") {g5L2 = "Q";}
+        else if (g5L3 == "") {g5L3 = "Q";}
+        else if (g5L4 == "") {g5L4 = "Q";}
+        else {g5L5 = "Q";}
+    }
+    else {
+        if (g6L1 == "") {g6L1 = "Q";}
+        else if (g6L2 == "") {g6L2 = "Q";}
+        else if (g6L3 == "") {g6L3 = "Q";}
+        else if (g6L4 == "") {g6L4 = "Q";}
+        else {g6L5 = "Q";}
+    }
+}
+
+let qKeyboardButton = document.getElementsByClassName("keyboard-letter")[0];
+qKeyboardButton.addEventListener("click", guessLetterQ);
+
+
+
+
+let eraseButton = document.getElementsByClassName("keyboard-button")[1];
+function backspace (currentGuess) {
+    if (currentGuess == 1) {
+        if (g1L5 != "") {g1L5 = "";}
+        else if (g1L4 != "") {g1L4 = "";}
+        else if (g1L3 != "") {g1L3 = "";}
+        else if (g1L2 != "") {g1L2 = "";}
+        else {g1L1 = "";}
+    }
+    else if (currentGuess == 2) {
+        if (g2L5 != "") {g2L5 = "";}
+        else if (g2L4 != "") {g2L4 = "";}
+        else if (g2L3 != "") {g2L3 = "";}
+        else if (g2L2 != "") {g2L2 = "";}
+        else {g2L1 = "";}
+    }
+    else if (currentGuess == 3) {
+        if (g3L5 != "") {g3L5 = "";}
+        else if (g3L4 != "") {g3L4 = "";}
+        else if (g3L3 != "") {g3L3 = "";}
+        else if (g3L2 != "") {g3L2 = "";}
+        else {g3L1 = "";}
+    }
+    else if (currentGuess == 4) {
+        if (g4L5 != "") {g4L5 = "";}
+        else if (g4L4 != "") {g4L4 = "";}
+        else if (g4L3 != "") {g4L3 = "";}
+        else if (g4L2 != "") {g4L2 = "";}
+        else {g4L1 = "";}
+    }
+    else if (currentGuess == 5) {
+        if (g5L5 != "") {g5L5 = "";}
+        else if (g5L4 != "") {g5L4 = "";}
+        else if (g5L3 != "") {g5L3 = "";}
+        else if (g5L2 != "") {g5L2 = "";}
+        else {g5L1 = "";}
+    }
+    else if (currentGuess == 6) {
+        if (g6L5 != "") {g6L5 = "";}
+        else if (g6L4 != "") {g6L4 = "";}
+        else if (g6L3 != "") {g6L3 = "";}
+        else if (g6L2 != "") {g6L2 = "";}
+        else {g6L1 = "";}
+    }
+    else {}
+}
+eraseButton.addEventListener("click", backspace);
+
+
+
+let enterButton = document.getElementsByClassName("keyboard-button")[0];
+
+
+
+let submittedGuess = "";
+function submitGuess (currentGuess) {
+    if (currentGuess == 1){
+        submittedGuess = '${g1L1}${g1L2}${g1L3}${g1L4}${g1L5}';
+        let wordExists = validGuess.includes(submittedGuess);
+        if (submittedGuess.length !== 5) {
+            alert ("Cannot submit guess with less than five letters selected");
+        }
+        else if (wordExists == false) {
+            alert ("Guess not a valid word");
+        }
+        else {
+            currentGuess ++;
+        }
+    }
+    else if (currentGuess == 2){
+        submittedGuess = '${g2L1}${g2L2}${g2L3}${g2L4}${g2L5}';
+        let wordExists = validGuess.includes(submittedGuess);
+        if (submittedGuess.length !== 5) {
+            alert ("Cannot submit guess with less than five letters selected");
+        }
+        else if (wordExists == false) {
+            alert ("Guess not a valid word");
+        }
+        else {
+            currentGuess ++;
+        }
+    }
+    else if (currentGuess == 3){
+        submittedGuess = '${g3L1}${g3L2}${g3L3}${g3L4}${g3L5}';
+        let wordExists = validGuess.includes(submittedGuess);
+        if (submittedGuess.length !== 5) {
+            alert ("Cannot submit guess with less than five letters selected");
+        }
+        else if (wordExists == false) {
+            alert ("Guess not a valid word");
+        }
+        else {
+            currentGuess ++;
+        }
+    }
+    else if (currentGuess == 4){
+        submittedGuess = '${g4L1}${g4L2}${g4L3}${g4L4}${g4L5}';
+        let wordExists = validGuess.includes(submittedGuess);
+        if (submittedGuess.length !== 5) {
+            alert ("Cannot submit guess with less than five letters selected");
+        }
+        else if (wordExists == false) {
+            alert ("Guess not a valid word");
+        }
+        else {
+            currentGuess ++;
+        }
+    }
+    else if (currentGuess == 5){
+        submittedGuess = '${g5L1}${g5L2}${g5L3}${g5L4}${g5L5}';
+        let wordExists = validGuess.includes(submittedGuess);
+        if (submittedGuess.length !== 5) {
+            alert ("Cannot submit guess with less than five letters selected");
+        }
+        else if (wordExists == false) {
+            alert ("Guess not a valid word");
+        }
+        else {
+            currentGuess ++;
+        }
+    }
+    else {
+        submittedGuess = '${g6L1}${g6L2}${g6L3}${g6L4}${g6L5}';
+        let wordExists = validGuess.includes(submittedGuess);
+        if (submittedGuess.length !== 5) {
+            alert ("Cannot submit guess with less than five letters selected");
+        }
+        else if (wordExists == false) {
+            alert ("Guess not a valid word");
+        }
+        else {
+            currentGuess ++;
+        }
+    }
+
+}
+
+enterButton.addEventListener("click", submitGuess);
+
+let correctAnswer = validGuess[Math.floor(Math.random() * validGuess.length)];
+
+function validateGuess (submittedGuess) {
+    let lowerCaseSubmittedGuess = submittedGuess.toLowerCase();
+    let l1 = lowerCaseSubmittedGuess[0];
+    let l2 = lowerCaseSubmittedGuess[1];
+    let l3 = lowerCaseSubmittedGuess[2];
+    let l4 = lowerCaseSubmittedGuess[3];
+    let l5 = lowerCaseSubmittedGuess[4];
+
+
+    if (correctAnswer.includes(l1)) {
+        if (currentGuess == 2){
+            if (l1 == correctAnswer[0]) {
+                    document.getElementById("guess1Letter1").class = "fully-correct-letter";
+                }
+            else {document.getElementById("guess1Letter1").class = "partially-correct-letter";}    
+        }
+        else if (currentGuess == 3){
+            if (l1 == correctAnswer[0]) {
+                document.getElementById("guess2Letter1").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess2Letter1").class = "partially-correct-letter";} 
+        }
+        else if (currentGuess == 4){
+            if (l1 == correctAnswer[0]) {
+                document.getElementById("guess3Letter1").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess3Letter1").class = "partially-correct-letter";} 
+        }
+        else if (currentGuess == 5){
+            if (l1 == correctAnswer[0]) {
+                document.getElementById("guess4Letter1").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess4Letter1").class = "partially-correct-letter";} 
+        }
+        else if (currentGuess == 6){
+            if (l1 == correctAnswer[0]) {
+                document.getElementById("guess5Letter1").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess5Letter1").class = "partially-correct-letter";} 
+        }
+        else if (currentGuess == 7){
+            if (l1 == correctAnswer[0]) {
+                document.getElementById("guess6Letter1").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess6Letter1").class = "partially-correct-letter";} 
+        }
+    }
+    else {
+        if (currentGuess == 2) {document.getElementById("guess1Letter1").class = "incorrect-letter";}
+        else if (currentGuess == 3) {document.getElementById("guess2Letter1").class = "incorrect-letter";}
+        else if (currentGuess == 4) {document.getElementById("guess3Letter1").class = "incorrect-letter";}
+        else if (currentGuess == 5) {document.getElementById("guess4Letter1").class = "incorrect-letter";}
+        else if (currentGuess == 6) {document.getElementById("guess5Letter1").class = "incorrect-letter";}
+        else {ocument.getElementById("guess6Letter1").class = "incorrect-letter";}
+    }
+    
+    if (correctAnswer.includes(l2)) {
+        if (currentGuess == 2){
+            if (l2 == correctAnswer[0]) {
+                    document.getElementById("guess1Letter2").class = "fully-correct-letter";
+                }
+            else {document.getElementById("guess1Letter2").class = "partially-correct-letter";}    
+        }
+        else if (currentGuess == 3){
+            if (l2 == correctAnswer[0]) {
+                document.getElementById("guess2Letter2").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess2Letter2").class = "partially-correct-letter";} 
+        }
+        else if (currentGuess == 4){
+            if (l2 == correctAnswer[0]) {
+                document.getElementById("guess3Letter2").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess3Letter2").class = "partially-correct-letter";} 
+        }
+        else if (currentGuess == 5){
+            if (l2 == correctAnswer[0]) {
+                document.getElementById("guess4Letter2").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess4Letter2").class = "partially-correct-letter";} 
+        }
+        else if (currentGuess == 6){
+            if (l2 == correctAnswer[0]) {
+                document.getElementById("guess5Letter2").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess5Letter2").class = "partially-correct-letter";} 
+        }
+        else if (currentGuess == 7){
+            if (l2 == correctAnswer[0]) {
+                document.getElementById("guess6Letter2").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess6Letter2").class = "partially-correct-letter";} 
+        }
+    }
+    else {
+        if (currentGuess == 2) {document.getElementById("guess1Letter2").class = "incorrect-letter";}
+        else if (currentGuess == 3) {document.getElementById("guess2Letter2").class = "incorrect-letter";}
+        else if (currentGuess == 4) {document.getElementById("guess3Letter2").class = "incorrect-letter";}
+        else if (currentGuess == 5) {document.getElementById("guess4Letter2").class = "incorrect-letter";}
+        else if (currentGuess == 6) {document.getElementById("guess5Letter2").class = "incorrect-letter";}
+        else {ocument.getElementById("guess6Letter2").class = "incorrect-letter";}
+    }
+    
+    if (correctAnswer.includes(l3)) {
+        if (currentGuess == 2){
+            if (l3 == correctAnswer[0]) {
+                    document.getElementById("guess1Letter3").class = "fully-correct-letter";
+                }
+            else {document.getElementById("guess1Letter3").class = "partially-correct-letter";}    
+        }
+        else if (currentGuess == 3){
+            if (l3 == correctAnswer[0]) {
+                document.getElementById("guess2Letter3").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess2Letter3").class = "partially-correct-letter";} 
+        }
+        else if (currentGuess == 4){
+            if (l3 == correctAnswer[0]) {
+                document.getElementById("guess3Letter3").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess3Letter3").class = "partially-correct-letter";} 
+        }
+        else if (currentGuess == 5){
+            if (l3 == correctAnswer[0]) {
+                document.getElementById("guess4Letter3").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess4Letter3").class = "partially-correct-letter";} 
+        }
+        else if (currentGuess == 6){
+            if (l3 == correctAnswer[0]) {
+                document.getElementById("guess5Letter3").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess5Letter3").class = "partially-correct-letter";} 
+        }
+        else if (currentGuess == 7){
+            if (l3 == correctAnswer[0]) {
+                document.getElementById("guess6Letter3").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess6Letter3").class = "partially-correct-letter";} 
+        }
+    }
+    else {
+        if (currentGuess == 2) {document.getElementById("guess1Letter3").class = "incorrect-letter";}
+        else if (currentGuess == 3) {document.getElementById("guess2Letter3").class = "incorrect-letter";}
+        else if (currentGuess == 4) {document.getElementById("guess3Letter3").class = "incorrect-letter";}
+        else if (currentGuess == 5) {document.getElementById("guess4Letter3").class = "incorrect-letter";}
+        else if (currentGuess == 6) {document.getElementById("guess5Letter3").class = "incorrect-letter";}
+        else {ocument.getElementById("guess6Letter3").class = "incorrect-letter";}
+    }
+    
+    if (correctAnswer.includes(l4)) {
+        if (currentGuess == 2){
+            if (l4 == correctAnswer[0]) {
+                    document.getElementById("guess1Letter4").class = "fully-correct-letter";
+                }
+            else {document.getElementById("guess1Letter4").class = "partially-correct-letter";}    
+        }
+        else if (currentGuess == 3){
+            if (l4 == correctAnswer[0]) {
+                document.getElementById("guess2Letter4").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess2Letter4").class = "partially-correct-letter";} 
+        }
+        else if (currentGuess == 4){
+            if (l4 == correctAnswer[0]) {
+                document.getElementById("guess3Letter4").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess3Letter4").class = "partially-correct-letter";} 
+        }
+        else if (currentGuess == 5){
+            if (l4 == correctAnswer[0]) {
+                document.getElementById("guess4Letter4").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess4Letter4").class = "partially-correct-letter";} 
+        }
+        else if (currentGuess == 6){
+            if (l4 == correctAnswer[0]) {
+                document.getElementById("guess5Letter4").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess5Letter4").class = "partially-correct-letter";} 
+        }
+        else if (currentGuess == 7){
+            if (l4 == correctAnswer[0]) {
+                document.getElementById("guess6Letter4").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess6Letter4").class = "partially-correct-letter";} 
+        }
+    }
+    else {
+        if (currentGuess == 2) {document.getElementById("guess1Letter4").class = "incorrect-letter";}
+        else if (currentGuess == 3) {document.getElementById("guess2Letter4").class = "incorrect-letter";}
+        else if (currentGuess == 4) {document.getElementById("guess3Letter4").class = "incorrect-letter";}
+        else if (currentGuess == 5) {document.getElementById("guess4Letter4").class = "incorrect-letter";}
+        else if (currentGuess == 6) {document.getElementById("guess5Letter4").class = "incorrect-letter";}
+        else {ocument.getElementById("guess6Letter4").class = "incorrect-letter";}
+    }
+    
+    if (correctAnswer.includes(l5)) {
+        if (currentGuess == 2){
+            if (l5 == correctAnswer[0]) {
+                    document.getElementById("guess1Letter5").class = "fully-correct-letter";
+                }
+            else {document.getElementById("guess1Letter5").class = "partially-correct-letter";}    
+        }
+        else if (currentGuess == 3){
+            if (l5 == correctAnswer[0]) {
+                document.getElementById("guess2Letter5").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess2Letter5").class = "partially-correct-letter";} 
+        }
+        else if (currentGuess == 4){
+            if (l5 == correctAnswer[0]) {
+                document.getElementById("guess3Letter5").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess3Letter5").class = "partially-correct-letter";} 
+        }
+        else if (currentGuess == 5){
+            if (l5 == correctAnswer[0]) {
+                document.getElementById("guess4Letter5").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess4Letter5").class = "partially-correct-letter";} 
+        }
+        else if (currentGuess == 6){
+            if (l5 == correctAnswer[0]) {
+                document.getElementById("guess5Letter5").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess5Letter5").class = "partially-correct-letter";} 
+        }
+        else if (currentGuess == 7){
+            if (l5 == correctAnswer[0]) {
+                document.getElementById("guess6Letter5").class = "fully-correct-letter";
+            }
+        else {document.getElementById("guess6Letter5").class = "partially-correct-letter";} 
+        }
+    }
+    else {
+        if (currentGuess == 2) {document.getElementById("guess1Letter5").class = "incorrect-letter";}
+        else if (currentGuess == 3) {document.getElementById("guess2Letter5").class = "incorrect-letter";}
+        else if (currentGuess == 4) {document.getElementById("guess3Letter5").class = "incorrect-letter";}
+        else if (currentGuess == 5) {document.getElementById("guess4Letter5").class = "incorrect-letter";}
+        else if (currentGuess == 6) {document.getElementById("guess5Letter5").class = "incorrect-letter";}
+        else {ocument.getElementById("guess6Letter5").class = "incorrect-letter";}
+    }
+        
+
+}
+enterButton.addEventListener("click", validateGuess);
