@@ -1,3 +1,5 @@
+/*skip to line 5760 for end of validGuess array*/
+
 const validGuess = [
     'which',
     'there',
@@ -5780,93 +5782,111 @@ const numberOfGuessesAllowed = 6;
 let currentGuess = 1;
 
 
-let g1L1 = document.getElementById("guess1Letter1").innerHTML;
-let g1L2 = document.getElementById("guess1Letter2").innerHTML;
-let g1L3 = document.getElementById("guess1Letter3").innerHTML;
-let g1L4 = document.getElementById("guess1Letter4").innerHTML;
-let g1L5 = document.getElementById("guess1Letter5").innerHTML;
+let g1L1 = document.querySelectorAll("#guess1Letter1")[0];
+let g1L2 = document.querySelectorAll("#guess1Letter2")[0];
+let g1L3 = document.querySelectorAll("#guess1Letter3")[0];
+let g1L4 = document.querySelectorAll("#guess1Letter4")[0];
+let g1L5 = document.querySelectorAll("#guess1Letter5")[0];
 
-let g2L1 = document.getElementById("guess2Letter1").innerHTML;
-let g2L2 = document.getElementById("guess2Letter2").innerHTML;
-let g2L3 = document.getElementById("guess2Letter3").innerHTML;
-let g2L4 = document.getElementById("guess2Letter4").innerHTML;
-let g2L5 = document.getElementById("guess2Letter5").innerHTML;
+let g2L1 = document.querySelectorAll("#guess2Letter1")[0];
+let g2L2 = document.querySelectorAll("#guess2Letter2")[0];
+let g2L3 = document.querySelectorAll("#guess2Letter3")[0];
+let g2L4 = document.querySelectorAll("#guess2Letter4")[0];
+let g2L5 = document.querySelectorAll("#guess2Letter5")[0];
 
-let g3L1 = document.getElementById("guess3Letter1").innerHTML;
-let g3L2 = document.getElementById("guess3Letter2").innerHTML;
-let g3L3 = document.getElementById("guess3Letter3").innerHTML;
-let g3L4 = document.getElementById("guess3Letter4").innerHTML;
-let g3L5 = document.getElementById("guess3Letter5").innerHTML;
+let g3L1 = document.querySelectorAll("#guess3Letter1")[0];
+let g3L2 = document.querySelectorAll("#guess3Letter2")[0];
+let g3L3 = document.querySelectorAll("#guess3Letter3")[0];
+let g3L4 = document.querySelectorAll("#guess3Letter4")[0];
+let g3L5 = document.querySelectorAll("#guess3Letter5")[0];
 
-let g4L1 = document.getElementById("guess4Letter1").innerHTML;
-let g4L2 = document.getElementById("guess4Letter2").innerHTML;
-let g4L3 = document.getElementById("guess4Letter3").innerHTML;
-let g4L4 = document.getElementById("guess4Letter4").innerHTML;
-let g4L5 = document.getElementById("guess4Letter5").innerHTML;
+let g4L1 = document.querySelectorAll("#guess4Letter1")[0];
+let g4L2 = document.querySelectorAll("#guess4Letter2")[0];
+let g4L3 = document.querySelectorAll("#guess4Letter3")[0];
+let g4L4 = document.querySelectorAll("#guess4Letter4")[0];
+let g4L5 = document.querySelectorAll("#guess4Letter5")[0];
 
-let g5L1 = document.getElementById("guess5Letter1").innerHTML;
-let g5L2 = document.getElementById("guess5Letter2").innerHTML;
-let g5L3 = document.getElementById("guess5Letter3").innerHTML;
-let g5L4 = document.getElementById("guess5Letter4").innerHTML;
-let g5L5 = document.getElementById("guess5Letter5").innerHTML;
+let g5L1 = document.querySelectorAll("#guess5Letter1")[0];
+let g5L2 = document.querySelectorAll("#guess5Letter2")[0];
+let g5L3 = document.querySelectorAll("#guess5Letter3")[0];
+let g5L4 = document.querySelectorAll("#guess5Letter4")[0];
+let g5L5 = document.querySelectorAll("#guess5Letter5")[0];
 
-let g6L1 = document.getElementById("guess6Letter1").innerHTML;
-let g6L2 = document.getElementById("guess6Letter2").innerHTML;
-let g6L3 = document.getElementById("guess6Letter3").innerHTML;
-let g6L4 = document.getElementById("guess6Letter4").innerHTML;
-let g6L5 = document.getElementById("guess6Letter5").innerHTML;
+let g6L1 = document.querySelectorAll("#guess6Letter1")[0];
+let g6L2 = document.querySelectorAll("#guess6Letter2")[0];
+let g6L3 = document.querySelectorAll("#guess6Letter3")[0];
+let g6L4 = document.querySelectorAll("#guess6Letter4")[0];
+let g6L5 = document.querySelectorAll("#guess6Letter5")[0];
 
-function guessLetterQ (currentGuess) {
-    if (currentGuess == 1) {
-        if (g1L1 == "") {g1L1 = "Q";}
-        else if (g1L2 == "") {g1L2 = "Q";}
-        else if (g1L3 == "") {g1L3 = "Q";}
-        else if (g1L4 == "") {g1L4 = "Q";}
-        else {g1L5 = "Q";}
-    }
-    else if (currentGuess == 2) {
-        if (g2L1 == "") {g2L1 = "Q";}
-        else if (g2L2 == "") {g2L2 = "Q";}
-        else if (g2L3 == "") {g2L3 = "Q";}
-        else if (g2L4 == "") {g2L4 = "Q";}
-        else {g2L5 = "Q";}
-    }
-    else if (currentGuess == 3) {
-        if (g3L1 == "") {g3L1 = "Q";}
-        else if (g3L2 == "") {g3L2 = "Q";}
-        else if (g3L3 == "") {g3L3 = "Q";}
-        else if (g3L4 == "") {g3L4 = "Q";}
-        else {g3L5 = "Q";}
-    }
-    else if (currentGuess == 4) {
-        if (g4L1 == "") {g4L1 = "Q";}
-        else if (g4L2 == "") {g4L2 = "Q";}
-        else if (g4L3 == "") {g4L3 = "Q";}
-        else if (g4L4 == "") {g4L4 = "Q";}
-        else {g4L5 = "Q";}
-    }
-    else if (currentGuess == 5) {
-        if (g5L1 == "") {g5L1 = "Q";}
-        else if (g5L2 == "") {g5L2 = "Q";}
-        else if (g5L3 == "") {g5L3 = "Q";}
-        else if (g5L4 == "") {g5L4 = "Q";}
-        else {g5L5 = "Q";}
-    }
-    else {
-        if (g6L1 == "") {g6L1 = "Q";}
-        else if (g6L2 == "") {g6L2 = "Q";}
-        else if (g6L3 == "") {g6L3 = "Q";}
-        else if (g6L4 == "") {g6L4 = "Q";}
-        else {g6L5 = "Q";}
-    }
+function guessQ () {
+        if (g1L1.innerHTML == "") {g1L1.innerHTML = "Q";}
+        else if (g1L2.innerHTML == "") {g1L2.innerHTML = "Q";}
+        else if (g1L3.innerHTML == "") {g1L3.innerHTML = "Q";}
+        else if (g1L4.innerHTML == "") {g1L4.innerHTML = "Q";}
+        else if (g1L5.innerHTML == "") {g1L5.innerHTML = "Q";}
+        else if (g2L1.innerHTML == "") {g2L1.innerHTML = "Q";}
+        else if (g2L2.innerHTML == "") {g2L2.innerHTML = "Q";}
+        else if (g2L3.innerHTML == "") {g2L3.innerHTML = "Q";}
+        else if (g2L4.innerHTML == "") {g2L4.innerHTML = "Q";}
+        else if (g2L5.innerHTML == "") {g2L5.innerHTML = "Q";}
+        else if (g3L1.innerHTML == "") {g3L1.innerHTML = "Q";}
+        else if (g3L2.innerHTML == "") {g3L2.innerHTML = "Q";}
+        else if (g3L3.innerHTML == "") {g3L3.innerHTML = "Q";}
+        else if (g3L4.innerHTML == "") {g3L4.innerHTML = "Q";}
+        else if (g3L5.innerHTML == "") {g3L5.innerHTML = "Q";}
+        else if (g4L1.innerHTML == "") {g4L1.innerHTML = "Q";}
+        else if (g4L2.innerHTML == "") {g4L2.innerHTML = "Q";}
+        else if (g4L3.innerHTML == "") {g4L3.innerHTML = "Q";}
+        else if (g4L4.innerHTML == "") {g4L4.innerHTML = "Q";}
+        else if (g4L5.innerHTML == "") {g4L5.innerHTML = "Q";}
+        else if (g5L1.innerHTML == "") {g5L1.innerHTML = "Q";}
+        else if (g5L2.innerHTML == "") {g5L2.innerHTML = "Q";}
+        else if (g5L3.innerHTML == "") {g5L3.innerHTML = "Q";}
+        else if (g5L4.innerHTML == "") {g5L4.innerHTML = "Q";}
+        else if (g5L5.innerHTML == "") {g5L5.innerHTML = "Q";}
+        else if (g6L1.innerHTML == "") {g6L1.innerHTML = "Q";}
+        else if (g6L2.innerHTML == "") {g6L2.innerHTML = "Q";}
+        else if (g6L3.innerHTML == "") {g6L3.innerHTML = "Q";}
+        else if (g6L4.innerHTML == "") {g6L4.innerHTML = "Q";}
+        else {g6L5.innerHTML = "Q";}
 }
 
-let qKeyboardButton = document.getElementsByClassName("keyboard-letter")[0];
-qKeyboardButton.addEventListener("click", guessLetterQ);
+let qKeyboardButton = document.querySelectorAll("button.keyboard-letter")[0];
+qKeyboardButton.addEventListener("click", guessQ);
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 let eraseButton = document.getElementsByClassName("keyboard-button")[1];
 function backspace (currentGuess) {
     if (currentGuess == 1) {
@@ -5921,7 +5941,7 @@ let enterButton = document.getElementsByClassName("keyboard-button")[0];
 
 
 
-let submittedGuess = "";
+let submittedGuess = " ";
 function submitGuess (currentGuess) {
     if (currentGuess == 1){
         submittedGuess = '${g1L1}${g1L2}${g1L3}${g1L4}${g1L5}';
@@ -6255,3 +6275,4 @@ function validateGuess (submittedGuess) {
 
 }
 enterButton.addEventListener("click", validateGuess);
+*/
