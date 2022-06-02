@@ -6537,6 +6537,41 @@ let lKeyboardButton = document.querySelectorAll("button.keyboard-letter")[18];
 lKeyboardButton.addEventListener("click", guessL);
 
 
+function guessZ () {
+    if (g1L1.innerHTML == "") {g1L1.innerHTML = "Z";}
+    else if (g1L2.innerHTML == "") {g1L2.innerHTML = "Z";}
+    else if (g1L3.innerHTML == "") {g1L3.innerHTML = "Z";}
+    else if (g1L4.innerHTML == "") {g1L4.innerHTML = "Z";}
+    else if (g1L5.innerHTML == "") {g1L5.innerHTML = "Z";}
+    else if (g2L1.innerHTML == "") {g2L1.innerHTML = "Z";}
+    else if (g2L2.innerHTML == "") {g2L2.innerHTML = "Z";}
+    else if (g2L3.innerHTML == "") {g2L3.innerHTML = "Z";}
+    else if (g2L4.innerHTML == "") {g2L4.innerHTML = "Z";}
+    else if (g2L5.innerHTML == "") {g2L5.innerHTML = "Z";}
+    else if (g3L1.innerHTML == "") {g3L1.innerHTML = "Z";}
+    else if (g3L2.innerHTML == "") {g3L2.innerHTML = "Z";}
+    else if (g3L3.innerHTML == "") {g3L3.innerHTML = "Z";}
+    else if (g3L4.innerHTML == "") {g3L4.innerHTML = "Z";}
+    else if (g3L5.innerHTML == "") {g3L5.innerHTML = "Z";}
+    else if (g4L1.innerHTML == "") {g4L1.innerHTML = "Z";}
+    else if (g4L2.innerHTML == "") {g4L2.innerHTML = "Z";}
+    else if (g4L3.innerHTML == "") {g4L3.innerHTML = "Z";}
+    else if (g4L4.innerHTML == "") {g4L4.innerHTML = "Z";}
+    else if (g4L5.innerHTML == "") {g4L5.innerHTML = "Z";}
+    else if (g5L1.innerHTML == "") {g5L1.innerHTML = "Z";}
+    else if (g5L2.innerHTML == "") {g5L2.innerHTML = "Z";}
+    else if (g5L3.innerHTML == "") {g5L3.innerHTML = "Z";}
+    else if (g5L4.innerHTML == "") {g5L4.innerHTML = "Z";}
+    else if (g5L5.innerHTML == "") {g5L5.innerHTML = "Z";}
+    else if (g6L1.innerHTML == "") {g6L1.innerHTML = "Z";}
+    else if (g6L2.innerHTML == "") {g6L2.innerHTML = "Z";}
+    else if (g6L3.innerHTML == "") {g6L3.innerHTML = "Z";}
+    else if (g6L4.innerHTML == "") {g6L4.innerHTML = "Z";}
+    else {g6L5.innerHTML = "Z";}
+}
+
+let zKeyboardButton = document.querySelectorAll("button.keyboard-letter")[19];
+zKeyboardButton.addEventListener("click", guessZ);
 
 
 /*
