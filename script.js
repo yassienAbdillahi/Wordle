@@ -6461,6 +6461,43 @@ let jKeyboardButton = document.querySelectorAll("button.keyboard-letter")[16];
 jKeyboardButton.addEventListener("click", guessJ);
 
 
+
+function guessK () {
+    if (g1L1.innerHTML == "") {g1L1.innerHTML = "K";}
+    else if (g1L2.innerHTML == "") {g1L2.innerHTML = "K";}
+    else if (g1L3.innerHTML == "") {g1L3.innerHTML = "K";}
+    else if (g1L4.innerHTML == "") {g1L4.innerHTML = "K";}
+    else if (g1L5.innerHTML == "") {g1L5.innerHTML = "K";}
+    else if (g2L1.innerHTML == "") {g2L1.innerHTML = "K";}
+    else if (g2L2.innerHTML == "") {g2L2.innerHTML = "K";}
+    else if (g2L3.innerHTML == "") {g2L3.innerHTML = "K";}
+    else if (g2L4.innerHTML == "") {g2L4.innerHTML = "K";}
+    else if (g2L5.innerHTML == "") {g2L5.innerHTML = "K";}
+    else if (g3L1.innerHTML == "") {g3L1.innerHTML = "K";}
+    else if (g3L2.innerHTML == "") {g3L2.innerHTML = "K";}
+    else if (g3L3.innerHTML == "") {g3L3.innerHTML = "K";}
+    else if (g3L4.innerHTML == "") {g3L4.innerHTML = "K";}
+    else if (g3L5.innerHTML == "") {g3L5.innerHTML = "K";}
+    else if (g4L1.innerHTML == "") {g4L1.innerHTML = "K";}
+    else if (g4L2.innerHTML == "") {g4L2.innerHTML = "K";}
+    else if (g4L3.innerHTML == "") {g4L3.innerHTML = "K";}
+    else if (g4L4.innerHTML == "") {g4L4.innerHTML = "K";}
+    else if (g4L5.innerHTML == "") {g4L5.innerHTML = "K";}
+    else if (g5L1.innerHTML == "") {g5L1.innerHTML = "K";}
+    else if (g5L2.innerHTML == "") {g5L2.innerHTML = "K";}
+    else if (g5L3.innerHTML == "") {g5L3.innerHTML = "K";}
+    else if (g5L4.innerHTML == "") {g5L4.innerHTML = "K";}
+    else if (g5L5.innerHTML == "") {g5L5.innerHTML = "K";}
+    else if (g6L1.innerHTML == "") {g6L1.innerHTML = "K";}
+    else if (g6L2.innerHTML == "") {g6L2.innerHTML = "K";}
+    else if (g6L3.innerHTML == "") {g6L3.innerHTML = "K";}
+    else if (g6L4.innerHTML == "") {g6L4.innerHTML = "K";}
+    else {g6L5.innerHTML = "K";}
+}
+
+let kKeyboardButton = document.querySelectorAll("button.keyboard-letter")[17];
+kKeyboardButton.addEventListener("click", guessK);
+
 /*
 let eraseButton = document.getElementsByClassName("keyboard-button")[1];
 function backspace (currentGuess) {
