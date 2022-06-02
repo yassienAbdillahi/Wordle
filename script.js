@@ -5782,6 +5782,10 @@ const numberOfGuessesAllowed = 6;
 let currentGuess = 1;
 
 
+/*skip to line 6803 for eraseButton and enterButton function*/
+
+
+
 let g1L1 = document.querySelectorAll("#guess1Letter1")[0];
 let g1L2 = document.querySelectorAll("#guess1Letter2")[0];
 let g1L3 = document.querySelectorAll("#guess1Letter3")[0];
@@ -6796,52 +6800,38 @@ let mKeyboardButton = document.querySelectorAll("button.keyboard-letter")[25];
 mKeyboardButton.addEventListener("click", guessM);
 
 
-/*
-let eraseButton = document.getElementsByClassName("keyboard-button")[1];
+let eraseButton = document.querySelectorAll("button.keyboard-button")[1];
 function backspace (currentGuess) {
-    if (currentGuess == 1) {
-        if (g1L5 != "") {g1L5 = "";}
-        else if (g1L4 != "") {g1L4 = "";}
-        else if (g1L3 != "") {g1L3 = "";}
-        else if (g1L2 != "") {g1L2 = "";}
-        else {g1L1 = "";}
-    }
-    else if (currentGuess == 2) {
-        if (g2L5 != "") {g2L5 = "";}
-        else if (g2L4 != "") {g2L4 = "";}
-        else if (g2L3 != "") {g2L3 = "";}
-        else if (g2L2 != "") {g2L2 = "";}
-        else {g2L1 = "";}
-    }
-    else if (currentGuess == 3) {
-        if (g3L5 != "") {g3L5 = "";}
-        else if (g3L4 != "") {g3L4 = "";}
-        else if (g3L3 != "") {g3L3 = "";}
-        else if (g3L2 != "") {g3L2 = "";}
-        else {g3L1 = "";}
-    }
-    else if (currentGuess == 4) {
-        if (g4L5 != "") {g4L5 = "";}
-        else if (g4L4 != "") {g4L4 = "";}
-        else if (g4L3 != "") {g4L3 = "";}
-        else if (g4L2 != "") {g4L2 = "";}
-        else {g4L1 = "";}
-    }
-    else if (currentGuess == 5) {
-        if (g5L5 != "") {g5L5 = "";}
-        else if (g5L4 != "") {g5L4 = "";}
-        else if (g5L3 != "") {g5L3 = "";}
-        else if (g5L2 != "") {g5L2 = "";}
-        else {g5L1 = "";}
-    }
-    else if (currentGuess == 6) {
-        if (g6L5 != "") {g6L5 = "";}
-        else if (g6L4 != "") {g6L4 = "";}
-        else if (g6L3 != "") {g6L3 = "";}
-        else if (g6L2 != "") {g6L2 = "";}
-        else {g6L1 = "";}
-    }
-    else {}
+    if (g6L5.innerHTML != "") {g6L5.innerHTML = "";}
+    else if (g6L4.innerHTML != "") {g6L4.innerHTML = "";}
+    else if (g6L3.innerHTML != "") {g6L3.innerHTML = "";}
+    else if (g6L2.innerHTML != "") {g6L2.innerHTML = "";}
+    else if (g6L1.innerHTML != "") {g6L1.innerHTML = "";}
+    else if (g5L5.innerHTML != "") {g5L5.innerHTML = "";}
+    else if (g5L4.innerHTML != "") {g5L4.innerHTML = "";}
+    else if (g5L3.innerHTML != "") {g5L3.innerHTML = "";}
+    else if (g5L2.innerHTML != "") {g5L2.innerHTML = "";}
+    else if (g5L1.innerHTML != "") {g5L1.innerHTML = "";}
+    else if (g4L5.innerHTML != "") {g4L5.innerHTML = "";}
+    else if (g4L4.innerHTML != "") {g4L4.innerHTML = "";}
+    else if (g4L3.innerHTML != "") {g4L3.innerHTML = "";}
+    else if (g4L2.innerHTML != "") {g4L2.innerHTML = "";}
+    else if (g4L1.innerHTML != "") {g4L1.innerHTML = "";}
+    else if (g3L5.innerHTML != "") {g3L5.innerHTML = "";}
+    else if (g3L4.innerHTML != "") {g3L4.innerHTML = "";}
+    else if (g3L3.innerHTML != "") {g3L3.innerHTML = "";}
+    else if (g3L2.innerHTML != "") {g3L2.innerHTML = "";}
+    else if (g3L1.innerHTML != "") {g3L1.innerHTML = "";}
+    else if (g2L5.innerHTML != "") {g2L5.innerHTML = "";}
+    else if (g2L4.innerHTML != "") {g2L4.innerHTML = "";}
+    else if (g2L3.innerHTML != "") {g2L3.innerHTML = "";}
+    else if (g2L2.innerHTML != "") {g2L2.innerHTML = "";}
+    else if (g2L1.innerHTML != "") {g2L1.innerHTML = "";}
+    else if (g1L5.innerHTML != "") {g1L5.innerHTML = "";}
+    else if (g1L4.innerHTML != "") {g1L4.innerHTML = "";}
+    else if (g1L3.innerHTML != "") {g1L3.innerHTML = "";}
+    else if (g1L2.innerHTML != "") {g1L2.innerHTML = "";}
+    else if (g1L1.innerHTML != "") {g1L1.innerHTML = "";}
 }
 eraseButton.addEventListener("click", backspace);
 
